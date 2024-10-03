@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Guessr</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="slidecontainer">
+        <!-- Slider for Red -->
+        <div class="labelcontainer">
+          <label for="redSlider">R:</label>
+          <input
+            type="range"
+            min="1"
+            max="25"
+            value="13"
+            step="1"
+            class="slider"
+            id="redSlider"
+            style="accent-color: crimson"
+            list="values"
+          />
+          <datalist id="values">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+            <option value="11"></option>
+            <option value="12"></option>
+            <option value="13"></option>
+            <option value="14"></option>
+            <option value="15"></option>
+            <option value="16"></option>
+            <option value="17"></option>
+            <option value="18"></option>
+            <option value="19"></option>
+            <option value="20"></option>
+            <option value="21"></option>
+            <option value="22"></option>
+            <option value="23"></option>
+            <option value="24"></option>
+            <option value="25"></option>
+          </datalist>
+          <div class="CheckMark" id="redCheckMark"></div>
+        </div>
+        <!-- Ticks for Red Slider -->
+        <div class="ticks">
+          <span>1</span><span>2</span><span>3</span><span>4</span> <span>5</span
+          ><span>6</span><span>7</span><span>8</span> <span>9</span
+          ><span>10</span><span>11</span><span>12</span> <span>13</span
+          ><span>14</span><span>15</span><span>16</span><span>17</span
+          ><span>18</span><span>19</span> <span>20</span><span>21</span
+          ><span>22</span><span>23</span><span>24</span>
+          <span>25</span>
+        </div>
+
+        <!-- Slider for Green -->
+        <div class="labelcontainer">
+          <label for="greenSlider">G:</label>
+          <input
+            type="range"
+            min="1"
+            max="25"
+            value="13"
+            step="1"
+            class="slider"
+            id="greenSlider"
+            style="accent-color: yellowgreen"
+            list="values"
+          />
+          <div class="CheckMark" id="greenCheckMark"></div>
+        </div>
+        <!-- Ticks for Green Slider -->
+        <div class="ticks">
+          <span>1</span><span>2</span><span>3</span><span>4</span> <span>5</span
+          ><span>6</span><span>7</span><span>8</span> <span>9</span
+          ><span>10</span><span>11</span><span>12</span> <span>13</span
+          ><span>14</span><span>15</span><span>16</span><span>17</span
+          ><span>18</span><span>19</span> <span>20</span><span>21</span
+          ><span>22</span><span>23</span><span>24</span>
+          <span>25</span>
+        </div>
+
+        <!-- Slider for Blue -->
+        <div class="labelcontainer">
+          <label for="blueSlider">B:</label>
+          <input
+            type="range"
+            min="1"
+            max="25"
+            value="13"
+            step="1"
+            class="slider"
+            id="blueSlider"
+            style="accent-color: dodgerblue"
+            list="values"
+          />
+          <div class="CheckMark" id="blueCheckMark"></div>
+        </div>
+        <!-- Ticks for Blue Slider -->
+        <div class="ticks">
+          <span>1</span><span>2</span><span>3</span><span>4</span> <span>5</span
+          ><span>6</span><span>7</span><span>8</span> <span>9</span
+          ><span>10</span><span>11</span><span>12</span> <span>13</span
+          ><span>14</span><span>15</span><span>16</span><span>17</span
+          ><span>18</span><span>19</span> <span>20</span><span>21</span
+          ><span>22</span><span>23</span><span>24</span>
+          <span>25</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <button class="btn" id="randomizeButton">
+          Randomize background color
+        </button>
+        <button class="btn" id="guessButton">Guess RGB!</button>
+
+        <div class="YourGuess" id="YourGuess">
+          <label for="YourGuess">Your guess will appear here</label>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
