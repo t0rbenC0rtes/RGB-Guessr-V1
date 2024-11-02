@@ -84,9 +84,9 @@ function checkGuess(userGuess) {
   console.log("Secret color : ", finalGuess);
   count += 1;
   const luminosity = document.querySelector("#lumispan");
-    let lumi = parseInt((((r/ 25) * 255) + ((g/ 25) * 255) + ((b/ 25) * 255)) / 3);
+    let lumi = parseInt((((r/ 25) * 100) + ((g/ 25) * 100) + ((b/ 25) * 100)) / 3);
   console.log(`${lumi}`);
-    luminosity.textContent = `${lumi}`;
+    luminosity.textContent = `${lumi}%`;
 
   guessLabel = document.getElementById("YourGuess").querySelector("label");
 
