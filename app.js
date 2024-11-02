@@ -85,7 +85,7 @@ function checkGuess(userGuess) {
   count += 1;
   const luminosity = document.querySelector("#lumispan");
     let lumi = parseInt((((r/ 25) * 255) + ((g/ 25) * 255) + ((b/ 25) * 255)) / 3);
-  console.log(lumi);
+  console.log(`${lumi}`);
     luminosity.textContent = `${lumi}`;
 
   guessLabel = document.getElementById("YourGuess").querySelector("label");
