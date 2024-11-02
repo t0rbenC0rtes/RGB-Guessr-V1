@@ -45,6 +45,9 @@ window.addEventListener("DOMContentLoaded", () => {
     blueValue = blueSlider.value;
 
     const userGuess = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
+    const luminosity = document.querySelector("#lumiSpan");
+    let lumi = (r+g+b)/3;
+    luminosity.style.innerText = `${lumi}`;
 
     let showGuess = `rgb(${(redValue / 25) * 255}, ${
       (greenValue / 25) * 255
@@ -128,3 +131,6 @@ function checkGuess(userGuess) {
     guessLabel.textContent = `You found RGB in ${count} tries, GG !`;
   }
 }
+
+
+
