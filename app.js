@@ -45,9 +45,9 @@ window.addEventListener("DOMContentLoaded", () => {
     blueValue = blueSlider.value;
 
     const userGuess = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
-    const luminosity = document.querySelector("#lumiSpan");
+    const luminosity = document.querySelector("#lumispan");
     let lumi = (r+g+b)/3;
-    luminosity.style.innerText = `${lumi}`;
+    luminosity.style.textContent = `${lumi}`;
 
     let showGuess = `rgb(${(redValue / 25) * 255}, ${
       (greenValue / 25) * 255
