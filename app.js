@@ -45,9 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
     blueValue = blueSlider.value;
 
     const userGuess = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
-    const luminosity = document.querySelector("#lumispan");
-    let lumi = parseInt((((r/ 25) * 255) + ((g/ 25) * 255) + ((b/ 25) * 255)) / 3);
-    luminosity.textContent = `${lumi}`;
+    
 
     let showGuess = `rgb(${(redValue / 25) * 255}, ${
       (greenValue / 25) * 255
@@ -85,6 +83,9 @@ function checkGuess(userGuess) {
   let finalGuess = `rgb(${r}, ${g}, ${b})`;
   console.log("Secret color : ", finalGuess);
   count += 1;
+  const luminosity = document.querySelector("#lumispan");
+    let lumi = parseInt((((r/ 25) * 255) + ((g/ 25) * 255) + ((b/ 25) * 255)) / 3);
+    luminosity.textContent = `${lumi}`;
 
   guessLabel = document.getElementById("YourGuess").querySelector("label");
 
