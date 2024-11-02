@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const userGuess = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
     const luminosity = document.querySelector("#lumispan");
-    let lumi = (((r/ 25) * 255) + ((g/ 25) * 255) + ((b/ 25) * 255)) / 3;
+    let lumi = parseInt((((r/ 25) * 255) + ((g/ 25) * 255) + ((b/ 25) * 255)) / 3);
     luminosity.textContent = `${lumi}`;
 
     let showGuess = `rgb(${(redValue / 25) * 255}, ${
